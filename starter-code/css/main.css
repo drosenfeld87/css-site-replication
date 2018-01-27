@@ -12,13 +12,14 @@ light blue: #1c5380
 body {
   display: block;
   background: url("../images/bgtile.png");
+  background-repeat-y: no-repeat;
   margin: 0;
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 main {
-  margin: 90px auto 0;
-  width: 880px;
+  margin: 75px auto 0;
+  width: 1000px;
 }
 
 img {
@@ -31,46 +32,67 @@ img {
   max-width: 42%;
 }
 
+.header {
+  margin: 20px 0;
+  padding: 25px 0 0 25px;
+  font-size: 1.5rem;
+  color: #06365f;
+  font-weight: 800;
+}
+
 .logo {
   display: block;
-  width: 60%;
-  float: right;
+  width: 100%;
 }
 
 aside {
   display: block;
   float: right;
-  background-image: url('../images/frame.png');
   max-width: 45%;
+  margin-top: 25px;
+  margin-left: -100px;
+  margin-right: 100px;
+}
+
+.about {
+  background-image: url('../images/frame.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header {
   margin: 20px 0;
-  font-size: 1.5rem;
+  padding: 25px 0 0 25px;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 
-p {
-  float: left;
-  margin: 10px 0;
+aside p {
+  padding: 20px;
+  line-height: 30px;
 }
 
 .icons {
-
+  margin-left: 20px;
 }
 
 .footer {
   clear: both;
+  font-size: 12px;
+  padding: 10px;
+  margin: 30px 20px 0 0px;
 }
 
 .footer > ul {
-  text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding-right: 60px;
   list-style: none;
 }
 
 .footer > * {
+  text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  font-weight: 800;
+  color: #1c5380;
 }
